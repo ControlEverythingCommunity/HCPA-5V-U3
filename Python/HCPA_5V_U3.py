@@ -7,6 +7,8 @@
 import smbus
 import time
 
+# Get I2C bus
+bus = smbus.SMBus(1)
 
 # HCPA_5V_U3 address, 0x28(40)
 # Send start command, 0x80(128)
