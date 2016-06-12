@@ -63,6 +63,6 @@ void loop()
   // Output data to dashboard
   Particle.publish("Relative humidity : ", String(humidity));
   Particle.publish("Temperature in Celsius : ", String(cTemp));
-  Particle.publish("Temperature in Farhenheit : ", String(fTemp));
+  Particle.publish("Temperature in Fahrenheit : ", String(fTemp));
   delay(500);
 }
