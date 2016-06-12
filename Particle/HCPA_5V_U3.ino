@@ -35,7 +35,7 @@ void setup()
 
 void loop()
 {
-  unsigned int data[2];
+  unsigned int data[4];
 
   // Start I2C transmission
   Wire.beginTransmission(Addr);
