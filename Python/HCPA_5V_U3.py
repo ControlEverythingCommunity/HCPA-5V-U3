@@ -24,6 +24,6 @@ cTemp = (((data[2] * 256) + (data[3] & 0xFC)) / 4) / 16384.0 * 165.0 - 40.0
 fTemp = (cTemp * 1.8) + 32
 
 # Output data to screen
-print "Relative Humidity : %.2f %%" %humidity
+print "Relative Humidity : %.2f %%RH" %humidity
 print "Temperature in Celsius : %.2f C" %cTemp
 print "Temperature in Fahrenheit : %.2f F" %fTemp
