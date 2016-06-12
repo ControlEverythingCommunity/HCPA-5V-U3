@@ -49,8 +49,8 @@ void loop()
 
   // Convert the data to 14-bits
   float humidity = (((data[0] & 0x3F) * 256) + data[1]) / 16384.0 * 100.0;
-  int cTemp = (((data[2] * 256) + (data[3] & 0xFC)) / 4) / 16384.0 * 165.0 - 40.0;
-  int fTemp = (cTemp * 1.8) + 32;
+  float cTemp = (((data[2] * 256) + (data[3] & 0xFC)) / 4) / 16384.0 * 165.0 - 40.0;
+  float fTemp = (cTemp * 1.8) + 32;
 
   // Output data to serial monitor
   Serial.print("Relative humidity : ");
