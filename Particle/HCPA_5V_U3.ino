@@ -53,7 +53,6 @@ void loop()
     data[1] = Wire.read();
     data[2] = Wire.read();
     data[3] = Wire.read();
-  }
 
   // Convert the data to 14-bits
   humidity = (((data[0] & 0x3F) * 256) + data[1]) / 16384.0 * 100.0;
@@ -64,5 +63,6 @@ void loop()
   Particle.publish("Relative humidity : ", String(humidity));
   Particle.publish("Temperature in Celsius : ", String(cTemp));
   Particle.publish("Temperature in Fahrenheit : ", String(fTemp));
-  delay(500);
+  delay(1000);
+  }
 }
